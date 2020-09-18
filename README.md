@@ -1,0 +1,1 @@
+# ubuntu_latex_jp
