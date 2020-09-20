@@ -90,6 +90,7 @@ You need edit settings.json with Settings editor.
             "name": "platex",
             "tools": [
                 "platex",
+                "platex",
                 "dvipdfmx"
             ]
         }
