@@ -11,6 +11,18 @@ You can build your project including Chinese, Japanese and Korean.
 - You do not need to install all latex packages on your system any more.
 - You can use the same latex packages on your machines or in a team members.
 
+## Table contents
+
+- [Usage](https://github.com/satoshifuku/ubuntu_latex_jp#usage)
+    - [Building a docker image](https://github.com/satoshifuku/ubuntu_latex_jp#building-a-docker-image)
+    - [Options to build a Latex project](https://github.com/satoshifuku/ubuntu_latex_jp#options-to-build-a-latex-project)
+    - [Command-line interface](https://github.com/satoshifuku/ubuntu_latex_jp#command-line-interface)
+      - [Powershell](https://github.com/satoshifuku/ubuntu_latex_jp#powershell)
+    - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
+      - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
+      -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
+      -  [More options for VS code]((https://github.com/satoshifuku/ubuntu_latex_jp#More-options-for-VS-code))
+
 ## Usage
 
 ### Building a docker image
@@ -49,7 +61,7 @@ docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp dvipdfmx -f yu-win10.map {
 
 You can build your latex project with LaTeX Workshop(Extension) on VS code.
 
-#### Requirements
+Requirements:
 - VS code (at least 1.42.0) 
 - [LaTeX Workshop(Extention of VS code)](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
   - Project repository: https://github.com/James-Yu/LaTeX-Workshop.
@@ -158,7 +170,7 @@ You can directly define commands which you use commands in Command-line interfac
 3. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
 
 
-Options:
+#### More options for VS code:
 
 Automatically cleaing files.
 Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
