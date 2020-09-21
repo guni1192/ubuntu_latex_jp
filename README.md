@@ -7,8 +7,8 @@ You can build your project including Chinese, Japanese and Korean.
 ## Why do I use a docker image?
 
 - You can start to use Latex easily.
-- You do not need to install all latex packages on your system any more.
-- You can use the same latex packages on your machines or in a team members.
+- You do not need to install all Latex packages on your system any more.
+- You can use the same Latex packages on your machines or in a team members.
 
 ## Table of contents
 
@@ -19,7 +19,7 @@ You can build your project including Chinese, Japanese and Korean.
     - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
-      -  [More options for VS code](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-latex-workshop)
+      -  [More options for LaTeX Workshop](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-latex-workshop)
 
 ## Usage
 
@@ -39,10 +39,10 @@ You have options to build your project.
 
 ### Command-line interface
 
-For example,When you want make pdf from your tex file, you can build a Latex file by the following sequence of cmmands `platex` -> `dvipdfmx`.
+For example, when you want make pdf from your tex file, you can build a Latex file by the following sequence of cmmands `platex` -> `dvipdfmx`.
 
 1. Before compiling, you have to allow local directories on your computer to be shared with containers. Check your setting of a file sharing on your computer(`Preferences` > `Resources` >`File sharing`).
-2. Compile a Latex file.
+2. Compile a Latex file(.tex).
 
 ```sh
 docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp platex -synctex=1 -interaction=nonstopmode -file-line-error -kanji=utf8 -guess-input-enc {foo_bar_baz}.tex
@@ -51,12 +51,12 @@ docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp platex -synctex=1 -interac
 3. Make a pdf from dvi
 
 ```sh
-docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp dvipdfmx -f yu-win10.map {foo_bar_baz}.dvi 
+docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp dvipdfmx -f yu-win10.map {foo_bar_baz}.dvi
 ```
 
 ### VS code with LaTeX Workshop(Extension)
 
-You can build your latex project with LaTeX Workshop(Extension) on VS code.
+You can build your Latex project with LaTeX Workshop(Extension) on VS code.
 
 Requirements:
 - VS code (at least 1.42.0) 
@@ -67,7 +67,7 @@ Requirements:
 
 Latexmk is a Perl script which you run sequence of commands for building.
 By the use of Latexmk,:
-- You have setup for VS code just once.
+- you edit seting.json for VS code just once.
 - you can change commands for each project easily.
 
 1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
@@ -164,10 +164,9 @@ You can directly define commands which you use commands in Command-line interfac
 
 3. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
 
-
 #### More options for LaTeX Workshop
 
-Automatically cleaing files.
+Automatically cleaing files after building your LaTeX project .
 Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
 
 ```json
