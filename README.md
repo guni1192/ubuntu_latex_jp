@@ -10,13 +10,12 @@ You can build your project including Chinese, Japanese and Korean.
 - You do not need to install all latex packages on your system any more.
 - You can use the same latex packages on your machines or in a team members.
 
-## Table contents
+## Table of contents
 
 - [Usage](https://github.com/satoshifuku/ubuntu_latex_jp#usage)
     - [Building a docker image](https://github.com/satoshifuku/ubuntu_latex_jp#building-a-docker-image)
     - [Options to build a Latex project](https://github.com/satoshifuku/ubuntu_latex_jp#options-to-build-a-latex-project)
     - [Command-line interface](https://github.com/satoshifuku/ubuntu_latex_jp#command-line-interface)
-      - [Powershell](https://github.com/satoshifuku/ubuntu_latex_jp#powershell)
     - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
@@ -28,29 +27,28 @@ You can build your project including Chinese, Japanese and Korean.
 
 First, You have to build a docker image your self.
 
-```
+```sh
 docker build ./ -t ubuntu_latex-jp
 ```
 
 ### Options to build a Latex project
 
 You have options to build your project.
-- Command-line interface
-- LaTeX Workshop(Extension) on VS code
+- Command-line interface.
+- LaTeX Workshop(Extension) on VS code.
 
 ### Command-line interface
 
-#### Powershell
-
 For example,When you want make pdf from your tex file, you can build a Latex file by the following sequence of cmmands `platex` -> `dvipdfmx`.
 
-1. Compiling a Latex file.
+1. Before compiling, you have to allow local directories on your computer to be shared with containers. Check your setting of a file sharing on your computer(`Preferences` > `Resources` >`File sharing`).
+2. Compile a Latex file.
 
 ```sh
 docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp platex -synctex=1 -interaction=nonstopmode -file-line-error -kanji=utf8 -guess-input-enc {foo_bar_baz}.tex
 ```
 
-2. Making a pdf from dvi
+3. Make a pdf from dvi
 
 ```sh
 docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp dvipdfmx -f yu-win10.map {foo_bar_baz}.dvi 
