@@ -178,3 +178,6 @@ Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
         "*.synctex.gz"
     ]
 ```
+
+### Limitations:
+- Not working synctex.
