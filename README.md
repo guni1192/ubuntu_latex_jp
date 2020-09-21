@@ -64,7 +64,7 @@ By the use of Latexmk,:
 1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
    - `Latexmkrc/For_platex/.latexmkrc`: platex is used.
    - `Latexmkrc/For_uplatex/.latexmkrc`: uplatex is used. 
-2. Open the Settings editor from the Command Palette (Ctrl+Shift+P) with Preferences: Open Settings (JSON).
+2. Open the Settings editor from the Command Palette(`Ctrl+Shift+P`) with Preferences: Open Settings (JSON).
 
 3. Enable Docker and set your docker image([using-docker](https://github.com/James-Yu/LaTeX-Workshop/wiki/Install#using-docker)).
 
@@ -97,7 +97,7 @@ By the use of Latexmk,:
 
 ```
 
-5. Call the command to build LaTeX project from the Command Palette or `Ctrl+Alt+B`. 
+5. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
 
 #### Direct definition of Docker commands
 
@@ -155,7 +155,7 @@ You can directly define commands which you use commands in Command-line interfac
     ]
 ```
 
-3. Call the command to build LaTeX project from the Command Palette or `Ctrl+Alt+B`. 
+3. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
 
 
 Options:
