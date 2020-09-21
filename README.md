@@ -19,7 +19,7 @@ You can build your project including Chinese, Japanese and Korean.
     - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
-      -  [More options for VS code](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-vs-code)
+      -  [More options for VS code](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-latex-workshop)
 
 ## Usage
 
@@ -165,7 +165,7 @@ You can directly define commands which you use commands in Command-line interfac
 3. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
 
 
-#### More options for VS code:
+#### More options for LaTeX Workshop
 
 Automatically cleaing files.
 Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
