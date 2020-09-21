@@ -4,8 +4,7 @@ Ubuntu_latex_jp provides a docker image which contains full versions of TeX Live
 Ubuntu_latex_jp includes a package for CJK (Chinese, Japanese and Korean) Characters.
 You can build your project including Chinese, Japanese and Korean.
 
-
-## Why do I use a docker image ?
+## Why do I use a docker image?
 
 - You can start to use Latex easily.
 - You do not need to install all latex packages on your system any more.
@@ -21,7 +20,7 @@ You can build your project including Chinese, Japanese and Korean.
     - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
-      -  [More options for VS code]((https://github.com/satoshifuku/ubuntu_latex_jp#More-options-for-VS-code))
+      -  [More options for VS code](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-vs-code)
 
 ## Usage
 
@@ -31,9 +30,9 @@ First, You have to build a docker image your self.
 
 ```
 docker build ./ -t ubuntu_latex-jp
-``` 
+```
 
-### Options to build a Latex project 
+### Options to build a Latex project
 
 You have options to build your project.
 - Command-line interface
@@ -71,7 +70,7 @@ Requirements:
 Latexmk is a Perl script which you run sequence of commands for building.
 By the use of Latexmk,:
 - You have setup for VS code just once.
-- you can change commands for each project easily. 
+- you can change commands for each project easily.
 
 1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
    - `Latexmkrc/For_platex/.latexmkrc`: platex is used.
@@ -82,7 +81,7 @@ By the use of Latexmk,:
 
 ```json
     "latex-workshop.docker.enabled": true,
-    "latex-workshop.docker.image.latex": "ubuntu_latex_jp",    
+    "latex-workshop.docker.image.latex": "ubuntu_latex_jp"
 ```
 
 4. Overwrite LaTeX recipes and tools([latex-recipes](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#latex-recipes))
@@ -102,11 +101,9 @@ By the use of Latexmk,:
             "name": "latexmk + your .latexmkrc with Docker",
             "tools": [
                 "latexmk + Docker"
-            ]            
+            ]
         },
-    ],
-
-
+    ]
 ```
 
 5. Call the command to build LaTeX project from the Command Palette(`Ctrl+Shift+P`) or `Ctrl+Alt+B`. 
@@ -143,8 +140,8 @@ You can directly define commands which you use commands in Command-line interfac
         "name" : "dvipdfmx",
         "command": "docker",
         "args": [
-            "run", 
-            "--rm", 
+            "run",
+            "--rm",
             "-v",
             "%DIR%:/working",
             "ubuntu_latex-jp",
@@ -182,4 +179,5 @@ Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
         "*.log",
         "*.dvi",
         "*.synctex.gz"
+    ]
 ```
