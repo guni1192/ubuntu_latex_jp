@@ -49,8 +49,10 @@ docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp dvipdfmx -f yu-win10.map {
 
 You can build your latex project with LaTeX Workshop(Extension) on VS code.
 
-#### Requirements 
-Add [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)([Project repository](https://github.com/James-Yu/LaTeX-Workshop)) to your VS code.
+#### Requirements
+- VS code (at least 1.42.0) 
+- [LaTeX Workshop(Extention of VS code)](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+  - Project repository: https://github.com/James-Yu/LaTeX-Workshop.
 
 #### Latexmk(recommendation)
 
