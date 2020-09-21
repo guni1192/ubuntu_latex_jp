@@ -20,6 +20,7 @@ You can build your project including Chinese, Japanese and Korean.
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
       -  [More options for LaTeX Workshop](https://github.com/satoshifuku/ubuntu_latex_jp#more-options-for-latex-workshop)
+    - [Limitations](https://github.com/satoshifuku/ubuntu_latex_jp/blob/master/README.md#limitations)
 
 ## Usage
 
