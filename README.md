@@ -40,6 +40,18 @@ You have options to build your project.
 
 ### Command-line interface
 
+You can use any edites you are prefer and using, when you build on Command-line interface.
+
+#### Latexmk
+1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
+   - `Latexmkrc/For_platex/.latexmkrc`: platex is used.
+   - `Latexmkrc/For_uplatex/.latexmkrc`: uplatex is used. 
+2. Run latexmk with the Docker image.
+```sh
+docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp latexmk {foo_bar_baz}.tex
+```
+
+#### Run commands step-by-step
 For example, when you want make pdf from your tex file, you can build a Latex file by the following sequence of cmmands `platex` -> `dvipdfmx`.
 
 1. Before compiling, you have to allow local directories on your computer to be shared with containers. Check your setting of a file sharing on your computer(`Preferences` > `Resources` >`File sharing`).
