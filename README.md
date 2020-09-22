@@ -56,7 +56,8 @@ docker run --rm -v "${PWD}/:/working" ubuntu_latex-jp latexmk {foo_bar_baz}.tex
 #### Run commands step-by-step
 For example, when you want make pdf from your tex file, you can build a Latex file by the following sequence of cmmands `platex` -> `dvipdfmx`.
 
-1. Before compiling, you have to allow local directories on your computer to be shared with containers. Check your setting of a file sharing on your computer(`Preferences` > `Resources` >`File sharing`).
+1. You have to allow local directories on your computer to be shared with containers. 
+Check your setting of a file sharing on your computer(`Preferences` / `Settings` > `Resources` >`File sharing`).
 2. Compile a Latex file(.tex).
 
 ```sh
