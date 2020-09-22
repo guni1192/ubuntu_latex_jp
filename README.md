@@ -196,7 +196,8 @@ Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
 ```
 
 ### Limitations:
-#### Not working synctex.
+
+#### Not working synctex in windows 10.
 
 Temporary solution:
 
