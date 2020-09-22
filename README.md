@@ -45,7 +45,7 @@ You have options to build your project.
 You can use any edites you are prefer and using, when you build on Command-line interface.
 
 #### Latexmk
-1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
+1. Make `.latexmkrc` yourself or copy `.latexmkrc` in this repository to a directory of your Latex project.
    - `Latexmkrc/For_platex/.latexmkrc`: platex is used.
    - `Latexmkrc/For_uplatex/.latexmkrc`: uplatex is used. 
 2. Run latexmk with the Docker image.
@@ -85,7 +85,7 @@ By the use of Latexmk,:
 - you edit seting.json for VS code just once.
 - you can change commands for each project easily.
 
-1. Make `.latexmkrc` or copy `.latexmkrc` in this repository to your Latex project.
+1. Make `.latexmkrc` yourself or copy `.latexmkrc` in this repository to a directory of your Latex project.
    - `Latexmkrc/For_platex/.latexmkrc`: platex is used.
    - `Latexmkrc/For_uplatex/.latexmkrc`: uplatex is used. 
 2. Open the Settings editor from the Command Palette(`Ctrl+Shift+P`) with Preferences: Open Settings (JSON).
