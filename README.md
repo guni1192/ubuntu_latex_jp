@@ -196,4 +196,13 @@ Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
 ```
 
 ### Limitations:
-- Not working synctex.
+#### Not working synctex.
+
+Temporary solution:
+
+You may correctly work the internal synctex of Latex workshop by the following commands in a directory of your Latex project.
+
+Powershell:
+```powershell
+((Get-Content (Get-Item *.synctex)).replace('/data', ${PWD})  -join "`n") + "`n" | Set-Content -NoNewline (Get-Item *.synctex)
+```
