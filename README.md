@@ -207,3 +207,29 @@ Powershell:
 ```powershell
 ((Get-Content (Get-Item *.synctex)).replace('/data', ${PWD})  -join "`n") + "`n" | Set-Content -NoNewline (Get-Item *.synctex)
 ```
+
+You run the above command with build in Latex workshop.
+Add a tool(`replace`) to `latex-workshop.latex.tools` and add `replace` to `latex-workshop.latex.recipes`.
+
+```json
+    "latex-workshop.latex.tools": [
+        ...
+        {
+            "name": "replace",
+            "command": "powershell.exe",
+            "args": [
+              "-Command",
+              "((Get-Content (Get-Item *.synctex)).replace('/data', ${PWD})  -join \"`n\") + \"`n\" | Set-Content -NoNewline (Get-Item *.synctex)"
+            ]
+        },
+    ]
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk + your .latexmkrc with Docker",
+            "tools": [
+                "latexmk + Docker", "replace"
+            ]
+        },
+    ],
+```
