@@ -16,6 +16,8 @@ You can build your project including Chinese, Japanese and Korean.
     - [Building a docker image](https://github.com/satoshifuku/ubuntu_latex_jp#building-a-docker-image)
     - [Options to build a Latex project](https://github.com/satoshifuku/ubuntu_latex_jp#options-to-build-a-latex-project)
     - [Command-line interface](https://github.com/satoshifuku/ubuntu_latex_jp#command-line-interface)
+      - [Latexmk](https://github.com/satoshifuku/ubuntu_latex_jp/blob/master/README.md#latexmk)
+      - [Run commands step-by-step](https://github.com/satoshifuku/ubuntu_latex_jp#run-commands-step-by-step)
     - [VS code with LaTeX Workshop(Extension)](https://github.com/satoshifuku/ubuntu_latex_jp#vs-code-with-latex-workshopextension)
       - [Latexmk(recommendation)](https://github.com/satoshifuku/ubuntu_latex_jp#latexmkrecommendation)
       -  [Direct definition of Docker commands](https://github.com/satoshifuku/ubuntu_latex_jp#direct-definition-of-docker-commands)
