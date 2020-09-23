@@ -202,6 +202,7 @@ Check [Compile](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile)
 Temporary solution:
 
 You may correctly work the internal synctex of Latex workshop by the following commands in a directory of your Latex project.
+Note:The following way is for a synctex with no compression (.synctex).
 
 Powershell:
 ```powershell
